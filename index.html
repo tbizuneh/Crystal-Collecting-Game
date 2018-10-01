@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector|Tesfa Bizuneh</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>Crystal Collector</header>
+    <iframe class="play" autoplay src="assets/sound/game.mp3" loop ></iframe>
+    <img class="healing" src="assets/images/Healing-Crystals.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="column1">
+                <h2>Game Instruction</h2>
+                <hr>
+                <p>You will be given a random number at the start of the game.</p>
+                <hr>
+                <p>By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+                <hr>
+                <p>You win the game by matching your total score to the random number.</p>
+                <hr>
+                <p>You lose the game if your total score goes above the random number.</p>
+                <hr>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <hr>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                <hr>
+            </div>
+            
+            <div class="column2">
+                    
+                            <span class ="randomNumber"></span>       
+            </div>
+            <div class="column3">
+                    <img src="assets/images/Stones.png" class=image id="im1">
+                    <img src="assets/images/crystal.jpg" class=image id="im2" >
+                    <img src="assets/images/Crystal_Lotus.jpg" class=image id="im3">
+                    <img src="assets/images/crystals.jpg" class=image id="im4">
+                </div>
+                <div class="column4">
+                   <h3> Wins:<span class="numberWins"></span>
+                            <hr>
+                    Losses:<span class= "numberLosses"></span></h3>
+                </div>
+                <div class="column5">
+                        <h4> Your Total Score Is:</h4>
+                            <span class="total"> </span>
+                     </div>
+
+               
+            </div>
+        </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
