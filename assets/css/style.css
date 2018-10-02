@@ -28,13 +28,13 @@ h2{
     content: "";
     display: table;
     clear: both;}
-.column1{
+.Instruction{
     width: 400px;
     margin-left: 50px; 
     float: left;
     background-color:darkgreen;
 }
-.column2{
+.random{
     float: left;
     padding: 20px;
     background-color: brown;
@@ -43,7 +43,7 @@ h2{
     margin-top: 50px;
     margin-left: 50px;
 }
-.column3{
+.crystals{
     float: left;
     width: 100px;
     height: 100px;
@@ -51,7 +51,7 @@ h2{
     margin-top: 10px; 
     padding: 20px
 }
-.column4{
+.results{
     float: left;
     width: 150px;
     height: 150px;
@@ -62,7 +62,7 @@ h2{
     color: black;
     font-style: italic;
 }
-.column5{
+.score{
     float: left;
     background-color: rgb(255, 187, 0);
     color: black;
@@ -103,4 +103,13 @@ h4{
 }
 p{
     color: aquamarine;
+}
+.footer{
+    
+        background-color: grey;
+        border-top: 6px solid purple;
+        line-height: 60px;
+        color: oldlace;
+        text-align: center;
+        margin-top: 20px;
 }

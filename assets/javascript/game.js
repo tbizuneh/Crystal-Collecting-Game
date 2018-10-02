@@ -1,12 +1,13 @@
 $( document ).ready(function(){
-    var random=Math.floor(Math.random()*101+19)
+    var random=Math.floor(Math.random()*101+19);
+    
     
     $('.randomNumber').text(random);
     
-    var n1= Math.floor(Math.random()*11+1)
-    var n2= Math.floor(Math.random()*11+1)
-    var n3= Math.floor(Math.random()*11+1)
-    var n4= Math.floor(Math.random()*11+1)
+    var num1= Math.floor(Math.random()*11+1);
+    var num2= Math.floor(Math.random()*11+1);
+    var num3= Math.floor(Math.random()*11+1);
+    var num4= Math.floor(Math.random()*11+1);
     
     var userTotal= 0; 
     var wins= 0;
@@ -19,31 +20,40 @@ $( document ).ready(function(){
         random=Math.floor(Math.random()*101+19);
         console.log(random)
         $('.randomNumber').text(random);
-        n1= Math.floor(Math.random()*11+1);
-        n2= Math.floor(Math.random()*11+1);
-        n3= Math.floor(Math.random()*11+1);
-        n4= Math.floor(Math.random()*11+1);
+        num1= Math.floor(Math.random()*11+1);
+        num2= Math.floor(Math.random()*11+1);
+        num3= Math.floor(Math.random()*11+1);
+        num4= Math.floor(Math.random()*11+1);
+        
         userTotal= 0;
         $('.total').text(userTotal);
         } 
-  
+ 
+    
   function winer(){
-  alert("You won!");
+    
     wins++; 
     $('.numberWins').text(wins);
-    reset();
+    setTimeout(function(){
+        alert("You won!")
+        reset();
+    },50)
   }
   
   function loser(){
-  alert ("You lose!");
+    
+  
     losses++;
     $('.numberLosses').text(losses);
-    reset()
+    setTimeout(function(){
+        alert("You lose!")
+        reset();
+    },50)
   }
   
     $('#im1').on('click', function(){
-      userTotal = userTotal + n1;
-      console.log("New userTotal= " + userTotal);
+      userTotal = userTotal + num1;
+      console.log( userTotal);
       $('.total').text(userTotal); 
             
           if (userTotal == random){
@@ -52,33 +62,44 @@ $( document ).ready(function(){
           else if ( userTotal > random){
             loser();
           }   
+          else if(userTotal<random){
+            
+            }
     })  
     $('#im2').on ('click', function(){
-      userTotal = userTotal + n2;
-      console.log("New userTotal= " + userTotal);
-      $('.total').text(userTotal); 
+      userTotal = userTotal + num2;
+      console.log(userTotal);
+      $('.total').text(userTotal);
+         
           if (userTotal == random){
+            
             winer();
           }
           else if ( userTotal > random){
             loser();
           } 
+          else if(userTotal<random){
+          
+          }
     })  
     $('#im3').on ('click', function(){
-      userTotal = userTotal + n3;
-      console.log("New userTotal= " + userTotal);
+      userTotal = userTotal + num3;
+      console.log(userTotal);
       $('.total').text(userTotal);
-  
-            if (userTotal == random){
+       
+            if (userTotal == random){ 
             winer();
           }
           else if ( userTotal > random){
             loser();
           } 
+          else if(userTotal<random){
+            
+            }
     })  
     $('#im4').on ('click', function(){
-      userTotal = userTotal + n4;
-      console.log("New userTotal= " + userTotal);
+      userTotal = userTotal + num4;
+      console.log (userTotal);
       $('.total').text(userTotal); 
         
             if (userTotal == random){
@@ -87,5 +108,9 @@ $( document ).ready(function(){
           else if ( userTotal > random){
             loser();
           }
+          else if(userTotal<random){
+            
+            }
+
     });   
   }); 
