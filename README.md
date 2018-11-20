@@ -1,4 +1,5 @@
 Crystals Collector Game
+
 This is a guessing game using numbers where the player will guess with numbers.
 There will be four crystals displayed as buttons on the page.
 The player will be shown a random number at the start of the game.
@@ -11,4 +12,5 @@ When the game is restarted, the player will be shown a new random number, all th
 Game design note:
 The random number shown at the start of the game should be between 19 - 120
 Each crystal should have a random hidden value between 1 - 12
+
 https://tbizuneh.github.io/Crystal-Collecting-Game/
